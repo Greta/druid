@@ -1,0 +1,20 @@
+td {
+  height: 20px;
+  width: 20px;
+}
+
+td.G {
+  background: green;
+}
+td.F {
+  background: yellow;
+}
+td.W {
+  background: black;
+}
+td.S {
+  background: blue;
+}
+td.P {
+  background: brown;
+}
