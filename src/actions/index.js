@@ -2,7 +2,7 @@
 export const playerMovement = movement => {
   // Return an action
   return {
-    type: 'MOVEMENT_TAKEN',
+    type: 'PLAYER_MOVE',
     payload: movement
   };
 };

@@ -1,0 +1,36 @@
+body {
+  background: black;
+  color: white; }
+
+td {
+  height: 20px;
+  width: 20px; }
+  td.G {
+    background: green; }
+  td.F {
+    background: yellow; }
+  td.W {
+    background: black; }
+  td.S {
+    background: blue; }
+  td.P {
+    background: brown; }
+
+#game {
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 70vw;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch; }
+  #game #left > *, #game #right > * {
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 15px; }
+  #game #left {
+    width: 70%;
+    margin-right: 15px; }
+  #game #right {
+    flex: 2 1 auto; }
