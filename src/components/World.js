@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 class World extends Component {
   render() {
-    return <div>World</div>
+    return <div id="world">World</div>
   }
 }
 

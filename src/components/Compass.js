@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 class Compass extends Component {
   render() {
-    return <div>Compass</div>
+    return <div id="compass">S</div>
   }
 }
 

@@ -4,8 +4,8 @@ body {
 }
 
 td {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   &.G {
     background: green;
   }
@@ -24,6 +24,7 @@ td {
 }
 
 @mixin section {
+  background: black;
   border: 5px solid white;
   border-radius: 10px;
   padding: 15px;
@@ -31,23 +32,39 @@ td {
 
 #game {
   @include section;
-  width: 70vw;
+  width: 60vw;
   margin: 20px auto;
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
 
   #left, #right {
+    position: relative;
     > * {
       @include section;
+      & + *:not(#world) {
+        margin-top: 15px;
+      }
     }
   }
 
   #left {
-    width: 70%;
     margin-right: 15px;
   }
   #right {
     flex: 2 1 auto;
   }
+}
+
+#compass {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 50px;
+  margin-left: -25px;
+}
+
+#world {
+  width: 800px;
+  height: 500px;
 }
